@@ -1,25 +1,25 @@
 ## sorting_visualizer
 
-##Bubble Sort
+## Bubble Sort
 
 ![Demo](./algos/bubblesort.gif)
 
-##Selection Sort
+## Selection Sort
 
 ![Demo](./algos/selection.gif)
 
-##Insertion Sort
+## Insertion Sort
 
 ![Demo](./algos/insertion.gif)
 
-##Merge Sort
+## Merge Sort
 
 ![Demo](./algos/merge%20sort.gif)
 
-##Quick Sort
+## Quick Sort
 
 ![Demo](./algos/quick.gif)
 
-##Heap Sort
+## Heap Sort
 
 ![Demo](./algos/heap.gif)
