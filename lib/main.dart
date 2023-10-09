@@ -36,7 +36,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<int> _numbers = [];
-  double _sampleSize = 500;
+  double _sampleSize = 100;
   late StreamController<List<int>> _streamController;
   late Stream<List<int>> _stream;
   int val = 2500;
@@ -134,17 +134,6 @@ class _MyHomePageState extends State<MyHomePage> {
               }).toList();
             },
           ),
-          PopupMenuButton<String>(
-            // help
-            itemBuilder: (BuildContext context) {
-              return {'Help'}.map((String choice) {
-                return PopupMenuItem<String>(
-                  value: choice,
-                  child: Text(choice),
-                );
-              }).toList();
-            },
-          )
         ],
       ),
       body: StreamBuilder(
@@ -208,10 +197,11 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           Container(
+            alignment: Alignment.center,
             width: MediaQuery.of(context).size.width / 2,
             child: TextFormField(
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: InputBorder.none,
                 hintText: 'Array Length',
               ),
@@ -221,7 +211,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-            alignment: Alignment.center,
           ),
         ],
       ),

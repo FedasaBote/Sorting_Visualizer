@@ -1,5 +1,8 @@
 // BUBBLE SORT
-bubbleSort(_numbers, _streamController) async {
+import 'dart:async';
+
+bubbleSort(
+    List<int> _numbers, StreamController<List<int>> _streamController) async {
   for (int i = 0; i < _numbers.length; ++i) {
     for (int j = 0; j < _numbers.length - i - 1; ++j) {
       if (_numbers[j] > _numbers[j + 1]) {
@@ -7,7 +10,7 @@ bubbleSort(_numbers, _streamController) async {
         _numbers[j] = _numbers[j + 1];
         _numbers[j + 1] = temp;
       }
-      await Future.delayed(Duration(microseconds: 500));
+      await Future.delayed(const Duration(microseconds: 30000));
       _streamController.add(_numbers);
     }
   }
@@ -161,7 +164,7 @@ selectionSort(_numbers, _streamController, val) async {
         _numbers[i] = temp;
       }
 
-      await Future.delayed(Duration(microseconds: 1000), () {});
+      await Future.delayed(Duration(microseconds: 30000), () {});
       _streamController.add(_numbers);
     }
   }

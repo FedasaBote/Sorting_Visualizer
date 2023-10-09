@@ -2,11 +2,11 @@
 
 ## Bubble Sort
 
-![Demo](./algos/bubblesort.gif)
+![Demo](<./algos/bubblesort%20(2).gif>)
 
 ## Selection Sort
 
-![Demo](./algos/selection.gif)
+![Demo](<./algos/selection%20(2).gif>)
 
 ## Insertion Sort
 
